@@ -513,7 +513,7 @@ text-align:center;
 
 .respon1{
   text-align:center;
-  color:#fff;
+  color:rgb(155, 18, 18);
   padding-top: 20px;
 }
 a.warna{
@@ -543,10 +543,10 @@ a.warna{
     border-radius:0.5rem;
 }
 input.form-control{
-  color: #0062cc;
+  color: #074383;
 }
 .form-control:focus{
-  border-color: rgba(0, 16, 160, 0.8);
+  border-color: rgba(14, 150, 155, 0.8);
   box-shadow: 0 1px 1px rgba(26, 0, 173, 0.075) inset, 0 0 8px rgba(0, 48, 204, 0.6);
   outline: 0 none;
 

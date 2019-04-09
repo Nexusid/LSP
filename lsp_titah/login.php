@@ -8,7 +8,7 @@ include 'db/koneksi.php';
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
 					<div class="panel-heading">
-                        <h3 class="panel-title">Silahkan Login</h3>
+                        <img src="gg.png" align="middle" width="250" height="250">
                         <h3 class="panel-title"></h3>
 
                     </div>
@@ -17,10 +17,10 @@ include 'db/koneksi.php';
 						<fieldset>			
 						<br>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="username" name="username" required>
+							<input type="text" class="form-control" placeholder="Username" name="username" required>
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Enter Password" name="password" required>
+							<input type="password" class="form-control" placeholder="Password" name="password" required>
                         </div>	
                         <div class="form-group">
 							<select class="form-control" name="status">
@@ -29,7 +29,7 @@ include 'db/koneksi.php';
                             </select>
 						</div>	
 						<div class="form-group">
-							<input type="submit" class="btn btn-md btn-primary btn-block" name="login" value="login">
+							<input type="submit" class="btn btn-md btn-primary btn-block" name="login" value="Login">
 						</div>
 						<!-- <div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
@@ -42,7 +42,7 @@ include 'db/koneksi.php';
 				</div>
 			</div>
 		</div>
-     </div>
+	 </div>
      <?php
      if(isset($_POST['login'])){
 					require_once('db/koneksi.php');
@@ -69,7 +69,7 @@ include 'db/koneksi.php';
 								$_SESSION['status'] = 'administrator';
 								// $_SESSION['nama'] = $ambil['nama'];
 								// $_SESSION['alamat'] = $ambil['alamat'];
-                                echo '<script language="javascript">alert("Anda berhasil Login sebagai super admin!");
+                                echo '<script language="javascript">alert("Success Login As SuperAdmin");
                                 document.location="index.php?hal=admin/daftar_buku/list";</script>';
                         }else if($row['status'] == 'user' && $status == 2){
                                 $_SESSION['username']=$username;
